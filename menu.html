@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu principal</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    #desktop {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('css/moto.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: #13171f;
+      flex-shrink: 0;
+    }
+
+    nav > ul {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    main {
+      flex-grow: 1;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: white;
+    }
+
+    .brand i {
+      color: #ffffff;
+    }
+
+    footer {
+      background-color: #13171f;
+      text-align: center;
+      padding: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .heart {
+      color: red;
+    }
+
+    .logout-btn {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .logout-btn:hover {
+      color: #ff6b6b;
+    }
+  </style>
+</head>
+
+<body id="desktop">
+
+  <nav>
+    <ul>
+      <li class="brand">
+        <i class="fas fa-motorcycle"></i>
+        Taller de servicios
+      </li>
+    </ul>
+
+    <ul>
+      <li><a href="#" class="contrast">Inicio</a></li>
+      <li><a href="#" class="contrast">Clientes</a></li>
+      <li><a href="#" class="contrast">Servicios</a></li>
+      <li><a href="#" class="contrast">Usuarios</a></li>
+    </ul>
+
+    <ul>
+      <li>
+        <a href="#" class="logout-btn" title="Cerrar sesión">
+          <i class="fas fa-sign-out-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Aquí iría el contenido principal -->
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Software hecho en Guate con <span class="heart">♥</span> por <a href="#">MeyMac</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

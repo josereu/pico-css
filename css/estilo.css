@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 640px;
+    /* breakpoint 'sm' viewport width aproximado */
+    margin-inline: auto;
+    /* centrar horizontalmente */
+}
+
+.footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 0.95rem;
+    border-top: 1px solid var(--pico-border-color);
+    background-color: var(--pico-background-color);
+    color: var(--pico-color);
+}
+
+.footer .footer-content p {
+    margin: 0.5rem 0;
+}
+
+.heart {
+    color: crimson;
+    font-weight: bold;
+}
