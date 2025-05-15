@@ -26,3 +26,121 @@ main {
     color: crimson;
     font-weight: bold;
 }
+
+html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    #desktop {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('css/moto.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: #13171f;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+
+    nav > ul {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    main {
+      flex-grow: 1;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: white;
+    }
+
+    .brand i {
+      color: #ffffff;
+    }
+
+    footer {
+      background-color: #13171f;
+      text-align: center;
+      padding: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .heart {
+      color: red;
+    }
+
+    .logout-btn {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .logout-btn:hover {
+      color: #ff6b6b;
+    }
+
+    /* Menú hamburguesa */
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: white;
+      background: none;
+      border: none;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hamburger {
+        display: block;
+        margin-left: auto;
+      }
+
+      .brand {
+        display: none;
+      }
+    }
