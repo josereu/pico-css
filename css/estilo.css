@@ -36,7 +36,7 @@ html, body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-image: url('css/moto.jpg');
+      background-image: url('../css/moto.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
