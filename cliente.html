@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li class="brand">
+                <i class="fas fa-motorcycle"></i>
+                Taller de servicios
+            </li>
+        </ul>
+
+        <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html" class="contrast">Inicio</a></li>
+            <li><a href="clientes.html" class="contrast">Clientes</a></li>
+            <li><a href="#" class="contrast">Servicios</a></li>
+            <li><a href="#" class="contrast">Usuarios</a></li>
+            <li>
+                <a href="index.html" class="logout-btn" title="Cerrar sesión">
+                    <i class="fa-solid fa-power-off"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container-fluid">
+         <h1>Clientes</h1>
+        <p>Formulario para añadir clientes nuevos</p>
+
+        <form action="">
+            <input type="text" placeholder="Apellidos" autofocus required>
+            <input type="password" placeholder="Nombres" required>
+            <input type="text" placeholder="Teléfono" required>
+            <input type="text" placeholder="Correo electrónico">
+            <button type="submit" formaction="clientes.html">Continuar</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
